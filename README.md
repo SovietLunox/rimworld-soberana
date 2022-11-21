@@ -1,8 +1,9 @@
 Programadores: [[sirzwart]], [[Luna]]
 Arte: [[sirzwart]]
+Roteiristas [[Bismarck]]
 
 ## Questline: Soberana
->Arranjar roteiristas
+>Bismarck está pensando
 
 
 ## Vestuario
