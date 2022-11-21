@@ -2,24 +2,26 @@
 <Defs>
 
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>Capivara</defName>
-		<label>capivara</label>
-		<description>capivara</description>
+		<defName>Zwart_Capivarinha</defName>
+		<label>capivarinha</label>
+		<description>capivarinha</description>
 		<statBases>
 			<MoveSpeed>4.5</MoveSpeed>
 			<MarketValue>250</MarketValue>
 			<ComfyTemperatureMin>-15</ComfyTemperatureMin>
 			<ComfyTemperatureMax>55</ComfyTemperatureMax>
-			<FilthRate>5</FilthRate>
+			<FilthRate>3.5</FilthRate>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
 		</statBases>
 		<race>
 			<useMeatFrom>Capybara</useMeatFrom>
 			<petness>1</petness>
 			<body>QuadrupedAnimalWithPaws</body>
 			<leatherDef>Leather_Plain</leatherDef>
+			<gestationPeriodDays>15</gestationPeriodDays>
 			<herdAnimal>true</herdAnimal>
-			<baseBodySize>0.90</baseBodySize>
-			<baseHealthScale>1.2</baseHealthScale>
+			<baseBodySize>1.4</baseBodySize>
+			<baseHealthScale>1.4</baseHealthScale>
 			<baseHungerRate>0.5</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<predator>false</predator>
@@ -28,6 +30,15 @@
 			<lifeExpectancy>25</lifeExpectancy>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.25</manhunterOnDamageChance>
+			<litterSizeCurve>
+              <points>
+              <li>(0.5, 0)</li>
+              <li>(1, 1)</li>
+              <li>(2, 1.7)</li>
+              <li>(2.5, 0.7)</li>
+              <li>(3, 0)</li>
+              </points>
+            </litterSizeCurve>
 			<nuzzleMtbHours>5</nuzzleMtbHours>
 			<nameOnTameChance>1</nameOnTameChance>
 			<trainability>Advanced</trainability>
@@ -100,25 +111,25 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>Capivara</defName>
-		<label>capivara</label>
-		<race>Capivara</race>
+		<defName>Zwart_Capivarinha</defName>
+		<label>capivarinha</label>
+		<race>Zwart_Capivarinha</race>
 		<combatPower>60</combatPower>
 		<wildGroupSize>2~4</wildGroupSize>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/capivara/capivara</texPath>
+					<texPath>Things/Pawn/Animal/capivarinha/capivarinha</texPath>
 					<drawSize>1.35</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/capivara/Dessicated_capivara</texPath>
-					<drawSize>1.35</drawSize>
+					<texPath>Things/Pawn/Animal/capivarinha/Dessicated_capivarinha</texPath>
+					<drawSize>0.75</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/capivara/capivara</texPath>
+					<texPath>Things/Pawn/Animal/capivarinha/capivarinha</texPath>
 					<drawSize>2</drawSize>
 					<shadowData>
                         <volume>(0.24, 0.24, 0.24)</volume>
@@ -126,13 +137,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-				<texPath>Things/Pawn/Animal/capivara/Dessicated_capivara</texPath>
-				<drawSize>2</drawSize>
+				<texPath>Things/Pawn/Animal/capivarinha/Dessicated_capivarinha</texPath>
+				<drawSize>1.4</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/capivara/capivara</texPath>
+					<texPath>Things/Pawn/Animal/capivarinha/capivarinha</texPath>
 					<drawSize>2.8</drawSize>
 					<shadowData>
                         <volume>(0.3, 0.3, 0.3)</volume>
@@ -140,8 +151,8 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/capivara/Dessicated_capivara</texPath>
-					<drawSize>2.8</drawSize>
+					<texPath>Things/Pawn/Animal/capivarinha/Dessicated_capivarinha</texPath>
+					<drawSize>2.2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
