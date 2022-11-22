@@ -21,14 +21,16 @@ Roteiristas [[Bismarck]]
 Capivarinhas
 - Sprite
 - ~~codigo~~
+Gray
 
 ## Robos -- Luna WIP
-- Molotovinho
-- Guilhotino
-- Tijolito
-- Espectro
-- Jiminho
-- Vinagreta
+Molotovinho
+Guilhotino
+Tijolito
+Espectro
+Jiminho
+Vinagreta
+- ~~Sprite~~
 
 
 ## Objetos
